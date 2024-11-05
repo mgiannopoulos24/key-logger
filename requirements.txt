@@ -1,0 +1,6 @@
+pynput
+psutil
+Pillow
+pyperclip
+pandas
+matplotlib
