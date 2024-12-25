@@ -31,7 +31,7 @@ This key logger includes the following advanced features to enhance data trackin
 > **Disclaimer: This key logger program should only be used in environments where monitoring is explicitly authorized and ethical, such as personal device monitoring, parental control, or employee monitoring with consent. Unauthorized use of key loggers is illegal and unethical. Always ensure proper permissions and compliance with legal regulations**.
 
 ## Installation
-It’s recommended to run this key logger program in an isolated environment using Python's virtual environment feature. This keeps dependencies separate and reduces the chance of interfering with system-wide libraries.
+It's recommended to run this key logger program in an isolated environment using Python's virtual environment feature. This keeps dependencies separate and reduces the chance of interfering with system-wide libraries.
 
 ## Steps to Set Up and Run in a Virtual Environment
 1. Create a Virtual Environment:
@@ -49,6 +49,13 @@ source venv/bin/activate
 ```
 3. Install Dependencies:
 With the virtual environment active, install any required packages (e.g., `pynput`, `psutil`, `pillow`, `pandas`, `matplotlib`, `pyperclip`):
+
+For Linux users, first install xclip (required for pyperclip):
+```console
+sudo apt-get install xclip
+```
+
+Then install Python packages:
 ```console
 pip install -r requirements.txt
 ```
@@ -62,10 +69,3 @@ deactivate
 ```
 
 > **Note: Running the program in a virtual environment keeps your system environment clean and helps with dependency management.**
-
-
-
-
-
-
-
